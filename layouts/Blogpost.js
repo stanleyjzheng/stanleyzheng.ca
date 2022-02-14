@@ -18,7 +18,7 @@ export default function Blogpost({ children }) {
           <PostImage css={image ? { backgroundImage: `url(${image})`} : {}} />
           <PostHeaderSubtitle>
             <BlogDate dateString={date} />
-            <BlogViews views={views} />
+            {/* <BlogViews views={views} /> */}
           </PostHeaderSubtitle>
         </PostHeader>
       }
