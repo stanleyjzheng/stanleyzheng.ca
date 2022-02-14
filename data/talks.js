@@ -11,7 +11,7 @@ const items = [
         stats: '',
         presentations: [
           {
-            title: "Chest X-ray abnormalities localization",
+            title: "Chest X-ray Abnormalities Localization",
             url: 'https://ieeexplore.ieee.org/document/9598342',
             video: 'https://www.youtube.com/watch?v=bJv3Nza3JuM&t=1s',
           },
