@@ -103,9 +103,9 @@ function TalkItem(props) {
         <li>
           <em>When:</em> {format(parseISO(talk.date), 'LLLL, d, yyyy')}
         </li>
-        <li>
+        {/* <li>
           <em>Where:</em> {talk.where}
-        </li>
+        </li> */}
         {talk.attendees && (
           <li>
             <em>Attendees:</em> {talk.attendees}

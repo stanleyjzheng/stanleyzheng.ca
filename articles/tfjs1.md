@@ -1,7 +1,6 @@
 ---
 title: "Tensorflow.js for PyTorch/Tensorflow developers Part 1"
 description: "A guide for new users of Tensorflow.js."
-slug: tfjs-1
 date: "2021-07-06"
 ---
 

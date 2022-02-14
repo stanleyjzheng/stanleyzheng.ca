@@ -3,7 +3,7 @@
  */
 
 :root {
-  --background: #3b4242;
+  --background: #2e3440;
   /* --background: #ECEFF4; */
   --comment: #5E81AC;
   --foreground: #ECEFF4;
@@ -23,32 +23,16 @@
   /* Transparency */
 
   /** 30% of transparency **/
-  --background-30: #3B425233;
-  --comment-30: #5E81AC33;
-  --foreground-30: #ECEFF433;
-  --selection-30: #4C566A33;
-
-  --cyan: #88C0D033;
-  --green: #8FBCBB33;
-  --orange: #D0877033;
-  --pink: #B48EAD33;
-  --purple: #B48EAD33;
-  --red: #BF616A33;
-  --yellow: #EBCB8B33;
+  --background-30: #3B4252;
+  --comment-30: #5E81AC;
+  --foreground-30: #ECEFF4;
+  --selection-30: #4C566A;
 
   /** 40% of transparency **/
-  --background-30: #3B425266;
-  --comment-30: #5E81AC66;
-  --foreground-30: #ECEFF466;
-  --selection-30: #4C566A66;
-
-  --cyan: #88C0D066;
-  --green: #8FBCBB66;
-  --orange: #D0877066;
-  --pink: #B48EAD66;
-  --purple: #B48EAD66;
-  --red: #BF616A66;
-  --yellow: #EBCB8B66;
+  --background-40: #3B4252;
+  --comment-40: #5E81AC;
+  --foreground-40: #ECEFF4;
+  --selection-40: #4C566A;
 }
 
 /* Selection */
