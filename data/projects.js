@@ -18,7 +18,7 @@ const items = [
       {
         title: 'Two Sigma: Halite IV PE',
         url: 'https://www.kaggle.com/c/halite-iv-playground-edition/leaderboard',
-        stats: '1st place',
+        stats: 'First place',
         icon: 'medal'
       },
       {
@@ -111,7 +111,7 @@ const awards = [
     awards: [
       {
         from: 'Two Sigma',
-        title: 'Halite IV 1st Place',
+        title: 'Halite IV First Place',
         url: 'https://www.kaggle.com/c/halite-iv-playground-edition/leaderboard',
       },
       {
