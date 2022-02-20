@@ -12,8 +12,8 @@ export async function getStaticProps() {
     title: 'Projects // Stanley Zheng',
     tagline: 'Work. Hobby. Open Source.',
     image: '/static/images/projects-bw.jpg',
-    primaryColor: 'cyan',
-    secondaryColor: 'green',
+    primaryColor: 'gradient1',
+    secondaryColor: 'gradient2',
   }
 
   return { props: meta }

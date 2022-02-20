@@ -23,6 +23,8 @@ export const {
       secondary: '#d8dee9',
       background: '#2e3440',
       hover: '#4c566a',
+      gradient1: '#e66465',
+      gradient2: '#9198e5',
       command: 'rgba(255, 255, 255, 0.05)',
     },
     fonts: {

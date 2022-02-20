@@ -13,8 +13,8 @@ export async function getStaticProps() {
     title: 'Talks // Stanley Zheng',
     tagline: 'Conferences. Pitches. Events.',
     image: '/static/images/talks-bw.jpg',
-    primaryColor: 'purple',
-    secondaryColor: 'cyan',
+    primaryColor: 'cyan',
+    secondaryColor: 'pink',
   }
 
   return { props: meta }

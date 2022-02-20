@@ -17,8 +17,8 @@ export async function getStaticProps() {
     description: "Stanley Zheng",
     tagline: 'Stanley Zheng',
     image: '/static/images/about-bw.jpg',
-    primaryColor: 'pink',
-    secondaryColor: 'purple',
+    primaryColor: 'green',
+    secondaryColor: 'cyan',
   }
 
   return { props: meta }

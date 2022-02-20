@@ -12,12 +12,26 @@ export async function getStaticProps() {
       title: 'Stanley Zheng',
       description: 'Smart contract engineer, machine learning enthusiast and researcher.',
       image: '/static/images/home-bw.jpg',
+      primaryColor: 'green',
+      secondaryColor: 'cyan'
     },
   }
 }
 
 export default function Index(props) {
-  const { title, description, image } = props
+  const { title, description, image, primaryColor, secondaryColor } = props
+
+  const GradientTitle = styled('h1', {
+    backgroundSize: "100%",
+    backgroundClip: "text",
+    WebkitBackgroundClip: "text",
+    MozBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    MozTextFillColor: "transparent",
+    WebkitBoxDecorationBreak: "clone",
+  })
+
+  console.log(primaryColor)
 
   return (
     <Wrapper>
@@ -35,7 +49,17 @@ export default function Index(props) {
         <PostContent>
           <PostContainer>
             <div>
-              <h1>{title}</h1>
+            <GradientTitle
+              css={{
+                backgroundImage: `linear-gradient(
+                  135deg,
+                  $${primaryColor} 0%,
+                  $${secondaryColor} 100%
+                );`,
+              }}
+            >
+              { title }
+            </GradientTitle>
               <p>
               {description}</p>
               <ShortcutHome />
