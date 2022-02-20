@@ -1,7 +1,7 @@
 ---
 title: "Tensorflow.js for PyTorch/Tensorflow developers Part 1"
 description: "A guide for new users of Tensorflow.js."
-date: "2021-07-06"
+date: "2021-07-15"
 ---
 
 # Tensorflow.js datasets for PyTorch/Tensorflow developers Part 1: Data

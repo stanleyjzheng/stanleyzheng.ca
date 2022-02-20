@@ -19,7 +19,7 @@ export const {
       orange: '#D08770',
       green: '#8FBCBB',
       cyan: '#88C0D0',
-      primary: '#ECEFF4',
+      primary: '#eceff4',
       secondary: '#d8dee9',
       background: '#2e3440',
       hover: '#4c566a',

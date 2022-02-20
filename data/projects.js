@@ -16,40 +16,36 @@ const items = [
         icon: 'live'
       },
       {
-        title: 'Two Sigma: Halite PE',
+        title: 'Two Sigma: Halite IV PE',
         url: 'https://www.kaggle.com/c/halite-iv-playground-edition/leaderboard',
-        stats: '1st place',
+        stats: 'First place',
         icon: 'medal'
       },
       {
-        title: 'Stegano - UofTHacks VII @UToronto Winner',
+        title: 'Stegano',
         url: 'https://github.com/stanleyjzheng/stegano',
         active: false,
       },
       {
-        title: 'Open4Collab - HackPrinceton @Princeton Winner',
-        url: 'https://devpost.com/software/open4collab-social-media-for-developers'
+        title: 'Open4Collab',
+        url: 'https://github.com/kperath/HackPrinceton'
       },
       {
-        title: "Pulse.IT - Sigmoid Hacks Winner",
-        url: 'https://devpost.com/software/pulse-it'
+        title: "Pulse.IT",
+        url: 'https://github.com/Greg-Tarr/Pulse'
       },
       {
-        title: 'Metaskin - Massey Hacks VII Winner',
+        title: 'MetaSkin',
         url: 'https://github.com/stanleyjzheng/masseyhacksvii/',
         active: false
       },
       {
-        title: 'DCP COVID-19 - Borderhacks Winner',
+        title: 'DCP COVID-19',
         url: 'https://github.com/stanleyjzheng/bridgehacks'
       },
       {
-        title: "Radiological Society of North America Pulmonary Embolysm Challenge - Kaggle Silver Medal",
+        title: "Radiological Society of North America Pulmonary Embolysm Challenge",
         url: 'https://github.com/stanleyjzheng/RSNA-STR'
-      },
-      {
-        title: "Hatite IV - Kaggle Bronze Medal",
-        url: 'https://www.kaggle.com/c/halite/leaderboard'
       },
       {
         title: "Harvard LISH-MoA Baseline NN with K-Folds",
@@ -73,20 +69,20 @@ const items = [
     year: '2020',
     projects: [
       {
-        title: 'Drought Watch - HackCamp @UBC Winner',
+        title: 'Drought Watch',
         url: 'https://github.com/stanleyjzheng/drought-watch',
         active: true,
       },
       {
-        title: "Global Wheat - Kaggle Silver Medal",
+        title: "University of Saskatchewan Global Wheat",
         url: 'https://github.com/stanleyjzheng/Global-Wheat'
       },
       {
-        title: 'Project Sigma - Ignitionhacks Winner',
+        title: 'Project Sigma',
         url: 'https://github.com/stanleyjzheng/ignitionhacks'
       },
       {
-        title: 'BlueSky AI - BridgeHacks Winner',
+        title: 'BlueSky AI',
         url: 'https://github.com/stanleyjzheng/BlueSky-AI'
       },
       {
@@ -104,10 +100,79 @@ const items = [
       {
         title: "COVID-ResNet",
         url: 'https://github.com/stanleyjzheng/COVID-ResNet'
-      }
-      
+      },
+    ]
+  },
+]
+
+const awards = [
+  {
+    year: '2021',
+    awards: [
+      {
+        from: 'Two Sigma',
+        title: 'Halite IV First Place',
+        url: 'https://www.kaggle.com/c/halite-iv-playground-edition/leaderboard',
+      },
+      {
+        from: 'UofTHacks (University of Toronto)',
+        title: 'Finalist, $11,500 1517 grant for most unique hack',
+        url: 'https://devpost.com/software/stegano-end-to-end-steganlaysis-tool',
+      },
+      {
+        from: 'HackPrinceton (Princeton)',
+        title: "Best Use of @ API",
+        url: 'https://devpost.com/software/open4collab-social-media-for-developers'
+      },
+      {
+        from: "Sigmoid Hacks",
+        title: "First Place, Best Neural Network From Scratch",
+        url: 'https://devpost.com/software/pulse-it'
+      },
+      {
+        from: 'Massey Hacks VII',
+        title: "First Place",
+        url: 'https://devpost.com/software/metaskin-or-something-like-that',
+      },
+      {
+        from: 'Borderhacks',
+        title: "Best Use of DCL",
+        url: 'https://devpost.com/software/the-future-epidemic-predictor'
+      },
+      {
+        from: "Radiological Society of North America Pulmonary Embolism Challenge",
+        title: "Silver Medal",
+        url: 'https://www.kaggle.com/c/rsna-str-pulmonary-embolism-detection/discussion/193400'
+      },
+    ]
+  },
+  {
+    year: '2020',
+    awards: [
+      {
+        from: "University of Saskatchewan Global Wheat",
+        title: "Silver Medal",
+        url: 'https://www.kaggle.com/c/global-wheat-detection/discussion/175922'
+      },
+      {
+        from: 'Ignition Hacks 2020 Datathon',
+        title: "First Place",
+        url: 'https://devpost.com/software/project-sigma-submission-nlp'
+      },
+      {
+        from: 'BridgeHacks',
+        title: "Best Environmental Hack",
+        url: 'https://devpost.com/software/bluesky-ai'
+      },
+      {
+        from: 'HackCamp (University of British Columbia)',
+        title: 'Teck Resources Best Hack',
+        url: 'https://devpost.com/software/drought-watch',
+      },
     ]
   },
 ]
 
 export default items
+
+export { items, awards }

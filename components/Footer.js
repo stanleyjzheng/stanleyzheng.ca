@@ -18,7 +18,17 @@ export default function Footer() {
       icon: 'ri-github-line'
     },
     {
-      title: 'linkedin',
+      title: 'Devpost',
+      url: 'https://devpost.com/stanleyjzheng',
+      icon: 'ri-terminal-line'
+    },
+    {
+      title: 'Kaggle',
+      url: 'https://www.kaggle.com/stanleyjzheng',
+      icon: 'ri-line-chart-line'
+    },
+    {
+      title: 'LinkedIn',
       url: 'https://linkedin.com/in/stanleyjzheng',
       icon: 'ri-linkedin-line'
     },
