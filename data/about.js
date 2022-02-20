@@ -81,7 +81,7 @@ const awards = [
         url: 'https://github.com/stanleyjzheng/bridgehacks'
       },
       {
-        from: "Radiological Society of North America Pulmonary Embolysm Challenge",
+        from: "Radiological Society of North America Pulmonary Embolism Challenge",
         title: "Silver Medal",
         url: 'https://github.com/stanleyjzheng/RSNA-STR'
       },

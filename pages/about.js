@@ -56,7 +56,7 @@ function About(props) {
     //     <Paragraph><strong>I love dark mode</strong>, open source, and side projects. When I'm not working, I like running, watching movies, and <strong>eating cheese</strong>.</Paragraph>
     //   </Section>
     // </Container>
-    return <>
+    return <div>
         <Paragraph
           css={{
             marginTop: "16px",
@@ -70,7 +70,7 @@ function About(props) {
       </Paragraph>
       <Paragraph>Previously, I worked in MLOps at Inferex, and helped hospitals with patient analytics at Kings Distributed Systems.</Paragraph>
       <Paragraph>I enjoy competitions - whether a Kaggle challenge, or hackathons. Check out  <a href="https://stanleyzheng.ca/projects">my projects</a> for more.</Paragraph>
-      </>
+      </div>
   }
 
   const renderBio = () => {
