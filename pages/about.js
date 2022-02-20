@@ -9,7 +9,7 @@ import { ButtonPrimary } from '../components/ButtonPrimary'
 import { ButtonPrimaryIcon } from '../components/ButtonPrimaryIcon'
 import { Icon } from '../components/Icon'
 import stripHtml from '../lib/strip-html'
-import items from '../data/about'
+import { items, education, awards } from '../data/about'
 
 export async function getStaticProps() {
   const meta = {
@@ -97,19 +97,48 @@ function About(props) {
     </div>
   }
 
-  const renderAwards = () => {
-    return <>
-      <h2>Awards</h2>
-    </>
+  const renderEducation = () => {
+    return education.map((item, index) => {
+      return <div style={{ marginBottom: 40 }} key={index}>
+        <h3>{item.school}</h3>
+        <p style={{ margin: 0 }}>
+          <span>{format(parseISO(item.startDate), 'LLL yyyy')}</span>
+          <span> – </span>
+          <span>{item.endDate ? format(parseISO(item.endDate), 'LLL yyyy') : 'Present'}</span>
+          {/* <span> • </span> */}
+          <span></span>
+        </p>
+      </div>
+    })
   }
 
-  const renderAll = () => {
+  const renderAwards = () => {
+    return awards.map((year, index) => {
+      return <div key={index}>
+        <h3>{year.year}</h3>
+          {year.awards.map((award, pIndex) => {
+            return <div> <p style={{ margin: 0 }}>
+              <span>{ award.from } • </span>
+            { award.url ?
+              <a href={award.url} target="_blank">{award.title}</a> :
+              <span>{award.title}</span> }
+            </p>
+          </div>
+          })}
+      </div>
+    })
+  }
+
+
+  const renderCareer = () => {
     return items.map((item, index) => {
       return <div style={{ marginBottom: 40 }} key={index}>
         <h3>{item.jobTitle}</h3>
         <p style={{ margin: 0 }}>
-          <a href={item.companyUrl} target="_blank">{item.company}</a>
-          <span> • {item.location}</span>
+          {item.companyUrl ? <a href={item.companyUrl} target="_blank">
+              {item.company}</a> :
+            <span>{item.company}</span> }
+          { item.location ? <span> • {item.location}</span> : null}
         </p>
         <p style={{ margin: 0 }}>
           <span>{format(parseISO(item.startDate), 'LLL yyyy')}</span>
@@ -171,7 +200,11 @@ function About(props) {
       {renderBio()} */}
 
       <h2>Career</h2>
-      {renderAll()}
+      {renderCareer()}
+      <h2>Education</h2>
+      {renderEducation()}
+      <h2>Awards</h2>
+      {renderAwards()}
     </>
   )
 }

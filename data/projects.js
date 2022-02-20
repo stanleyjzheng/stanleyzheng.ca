@@ -22,33 +22,33 @@ const items = [
         icon: 'medal'
       },
       {
-        title: 'Stegano - UofTHacks VII @UToronto Winner',
+        title: 'Stegano',
         url: 'https://github.com/stanleyjzheng/stegano',
         active: false,
       },
       {
-        title: 'Open4Collab - HackPrinceton @Princeton Winner',
+        title: 'Open4Collab',
         url: 'https://devpost.com/software/open4collab-social-media-for-developers'
       },
       {
-        title: "Pulse.IT - Sigmoid Hacks Winner",
+        title: "Pulse.IT",
         url: 'https://devpost.com/software/pulse-it'
       },
       {
-        title: 'Metaskin - Massey Hacks VII Winner',
+        title: 'MetaSkin',
         url: 'https://github.com/stanleyjzheng/masseyhacksvii/',
         active: false
       },
       {
-        title: 'DCP COVID-19 - Borderhacks Winner',
+        title: 'DCP COVID-19',
         url: 'https://github.com/stanleyjzheng/bridgehacks'
       },
       {
-        title: "Radiological Society of North America Pulmonary Embolysm Challenge - Kaggle Silver Medal",
+        title: "Radiological Society of North America Pulmonary Embolysm Challenge",
         url: 'https://github.com/stanleyjzheng/RSNA-STR'
       },
       {
-        title: "Hatite IV - Kaggle Bronze Medal",
+        title: "Hatite IV",
         url: 'https://www.kaggle.com/c/halite/leaderboard'
       },
       {
@@ -73,20 +73,20 @@ const items = [
     year: '2020',
     projects: [
       {
-        title: 'Drought Watch - HackCamp @UBC Winner',
+        title: 'Drought Watch',
         url: 'https://github.com/stanleyjzheng/drought-watch',
         active: true,
       },
       {
-        title: "Global Wheat - Kaggle Silver Medal",
+        title: "University of Saskatchewan Global Wheat",
         url: 'https://github.com/stanleyjzheng/Global-Wheat'
       },
       {
-        title: 'Project Sigma - Ignitionhacks Winner',
+        title: 'Project Sigma',
         url: 'https://github.com/stanleyjzheng/ignitionhacks'
       },
       {
-        title: 'BlueSky AI - BridgeHacks Winner',
+        title: 'BlueSky AI',
         url: 'https://github.com/stanleyjzheng/BlueSky-AI'
       },
       {
@@ -104,8 +104,7 @@ const items = [
       {
         title: "COVID-ResNet",
         url: 'https://github.com/stanleyjzheng/COVID-ResNet'
-      }
-      
+      },
     ]
   },
 ]
