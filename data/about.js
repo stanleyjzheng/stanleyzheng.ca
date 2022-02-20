@@ -77,7 +77,7 @@ const awards = [
       },
       {
         from: 'Borderhacks Winner',
-        title: "First Place",
+        title: "Best Use of DCL",
         url: 'https://github.com/stanleyjzheng/bridgehacks'
       },
       {
