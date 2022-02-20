@@ -29,7 +29,7 @@ export default function Blogpost({ children }) {
               <PostContentTitle>{title}</PostContentTitle>
               <PostContentSubtitle>
                 <BlogDate dateString={date} />
-                <BlogViews views={views} />
+                {/* <BlogViews views={views} /> */}
               </PostContentSubtitle>
             </div>
           }
