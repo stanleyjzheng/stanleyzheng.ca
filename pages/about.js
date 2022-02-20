@@ -68,7 +68,7 @@ function About(props) {
       <Paragraph>I'm currently developing smart contracts - for the joy of optimization, and also for clients.
         I particularly enjoy the data side of blockchain, including MEV and chain/mempool analysis.
       </Paragraph>
-      <Paragraph>Previously, I worked in MLOps at Inferex, and helped hospitals with patient analytics at Kings Distributed Systems.</Paragraph>
+      <Paragraph>Previously, I worked in MLOps at Inferex, and worked with hospitals on patient analytics at Kings Distributed Systems.</Paragraph>
       <Paragraph>I enjoy competitions - whether a Kaggle challenge, or hackathons. Check out  <a href="https://stanleyzheng.ca/projects">my projects</a> for more.</Paragraph>
       </div>
   }

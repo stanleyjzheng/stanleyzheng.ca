@@ -5,7 +5,7 @@ import Base from '../layouts/Base'
 import FeaturedProject from '../components/FeaturedProject'
 import { FeaturedProjects } from '../components/FeaturedProjects'
 import stripHtml from '../lib/strip-html'
-import items from '../data/projects'
+import { items, awards } from '../data/projects'
 
 export async function getStaticProps() {
   const meta = {
@@ -24,7 +24,7 @@ function Projects(props) {
     const featured = [
       'PyData Boston Pseudolabelling Keynote',
       'Chest X-ray abnormalities localization',
-      'Two Sigma: Halite PE'
+      'Two Sigma: Halite IV PE'
     ]
 
     return items
@@ -45,7 +45,24 @@ function Projects(props) {
       })
   }
 
-  const renderAll = () => {
+  const renderAwards = () => {
+    return awards.map((year, index) => {
+      return <div key={index}>
+        <h3>{year.year}</h3>
+          {year.awards.map((award, pIndex) => {
+            return <div> <ul><li> <p style={{ margin: 0 }}>
+              <span>{ award.from } • </span>
+            { award.url ?
+              <a href={award.url} target="_blank">{award.title}</a> :
+              <span>{award.title}</span> }
+            </p></li></ul>
+          </div>
+          })}
+      </div>
+    })
+  }
+
+  const renderProjects = () => {
     return items.map((item, index) => {
       return <div key={index}>
         <h3>{item.year}</h3>
@@ -90,8 +107,11 @@ function Projects(props) {
           {renderFeatured()}
         </FeaturedProjects>
 
+        <h2>Competitions</h2>
+        { renderAwards() }
+
         <h2>All Projects</h2>
-        {renderAll()}
+        {renderProjects()}
       </AnimateSharedLayout>
     </>
   )
