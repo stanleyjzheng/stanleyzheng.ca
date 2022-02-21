@@ -11,20 +11,23 @@ export const {
   config,
 } = createStitches({
   theme: {
-    colors: {
-      yellow: '#EBCB8B',
-      pink: '#ff80bf',
-      purple: '#B48EAD',
-      red: '#BF616A',
-      orange: '#D08770',
-      green: '#8FBCBB',
-      cyan: '#88C0D0',
-      primary: '#eceff4',
-      secondary: '#d8dee9',
-      background: '#2e3440',
-      hover: '#4c566a',
-      gradient1: '#e66465',
-      gradient2: '#9198e5',
+    colors: { // all from nordtheme.com
+      yellow: '#EBCB8B', // nord aurora yellow
+      pink: '#ff80bf', // default pink
+      purple: '#B48EAD', // nord aurora purple
+      red: '#BF616A', // nord aurora red
+      orange: '#D08770', // nord aurora orange
+      green: '#8FBCBB', // nord frost cyan
+      darkGreen: '#a3be8c', // nord aurora green
+      blue: '#81a1c1', //nord frost light blue
+      darkBlue: '#5e81ac', //nord frost dark blue
+      cyan: '#88C0D0', // nord aurora blue
+      primary: '#eceff4', // nord snow storm white
+      secondary: '#d8dee9', // nord snow storm gray
+      background: '#2e3440', // nord darkest slate gray
+      hover: '#4c566a', // nord lightest slate gray
+      gradient1: '#e66465', // from firefox
+      gradient2: '#9198e5', // from firefox
       command: 'rgba(255, 255, 255, 0.05)',
     },
     fonts: {

@@ -12,8 +12,8 @@ export async function getStaticProps() {
       title: 'Stanley Zheng',
       description: 'Smart contract engineer, machine learning enthusiast and researcher.',
       image: '/static/images/home-bw.jpg',
-      primaryColor: 'green',
-      secondaryColor: 'cyan'
+      primaryColor: 'cyan',
+      secondaryColor: 'darkBlue'
     },
   }
 }
