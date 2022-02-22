@@ -28,7 +28,7 @@ export const {
       hover: '#4c566a', // nord lightest slate gray
       gradient1: '#e66465', // from firefox
       gradient2: '#9198e5', // from firefox
-      command: 'rgba(46, 52, 64, 0.8)',
+      command: '#2e3440',
     },
     fonts: {
       body: 'Biotif, sans-serif',
@@ -65,7 +65,8 @@ const globalStyles = globalCss({
     margin: "0",
     padding: "0",
     WebkitFontSmoothing: "antialiased",
-    background: "$background"
+    background: "$background",
+    scrollbarColor: "$hover $background", 
   },
   'kbd': {
     color: "$background",

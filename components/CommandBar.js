@@ -313,7 +313,7 @@ const Animator = styled(KBarAnimator, {
 const getResultStyle = (active) => {
   return {
     padding: '12px 16px',
-    background: active ? 'rgba(255, 255, 255, 0.1)' : '$command',
+    background: active ? '$hover' : '$command',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
