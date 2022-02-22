@@ -1,5 +1,25 @@
 import { createStitches } from '@stitches/react';
 
+// from https://nordtheme.com
+const nord = [
+  "#2e3440",
+  "#3b4252",
+  "#434c5e",
+  "#4c566a",
+  "#d8dee9",
+  "#e5e9f0",
+  "#eceff4",
+  "#8fbcbb",
+  "#88c0d0",
+  "#81a1c1",
+  "#5e81ac",
+  "#bf616a",
+  "#d08770",
+  "#ebcb8b",
+  "#a3be8c",
+  "#b48ead"
+]
+
 export const {
   styled,
   css,
@@ -12,23 +32,21 @@ export const {
 } = createStitches({
   theme: {
     colors: { 
-      yellow: '#EBCB8B', // nord aurora yellow
-      pink: '#ff80bf', // default pink
-      purple: '#B48EAD', // nord aurora purple
-      red: '#BF616A', // nord aurora red
-      orange: '#D08770', // nord aurora orange
-      green: '#8FBCBB', // nord frost cyan
-      darkGreen: '#a3be8c', // nord aurora green
-      blue: '#81a1c1', //nord frost light blue
-      darkBlue: '#5e81ac', //nord frost dark blue
-      cyan: '#88C0D0', // nord aurora blue
-      primary: '#eceff4', // nord snow storm white
-      secondary: '#d8dee9', // nord snow storm gray
-      background: '#2e3440', // nord darkest slate gray
-      hover: '#4c566a', // nord lightest slate gray
-      gradient1: '#e66465', // from firefox
-      gradient2: '#9198e5', // from firefox
-      command: '#2e3440',
+      pink: '#ff80bf', // vibrant non-nord pink
+      background: nord[0],
+      command: nord[0],
+      hover: nord[3],
+      secondary: nord[4],
+      primary: nord[6],
+      green: nord[7],
+      cyan: nord[8],
+      blue: nord[9],
+      darkBlue: nord[10],
+      red: nord[11], 
+      orange: nord[12],
+      yellow: nord[13],
+      darkGreen: nord[14],
+      purple: nord[15],
     },
     fonts: {
       body: 'Biotif, sans-serif',
