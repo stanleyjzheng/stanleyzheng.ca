@@ -29,33 +29,6 @@ function About(props) {
   const pronunciationAudio = typeof Audio != 'undefined' ? new Audio('/static/audio/pronunciation.mp3') : null
 
   const renderIntro = () => {
-    // return <Container>
-    //   <Section>
-    //     <Image
-    //       alt="Zeno"
-    //       src="/static/images/zeno-bw.jpg"
-    //       width="336"
-    //       height="336"
-    //       placeholder="blur"
-    //       blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
-    //       priority
-    //     />
-    //   </Section>
-    //   <Section>
-    //     <Paragraph
-    //       css={{
-    //         marginTop: "16px",
-    //         "@bp2": { marginTop: "-6px" },
-    //       }}
-    //     >
-    //       <strong>Hey, I'm Stanley Zheng</strong>.
-
-    //       I started as a software engineer back in 2009, working with Flash.
-    //     </Paragraph>
-    //     <Paragraph>I'm currently the <strong>VP of Developer Experience</strong> at WorkOS. Before that, I was the CPO at Liferay Cloud. I'm originally from Brazil and now living in <strong>Los Angeles, California</strong> with my amazing wife and beautiful daughter.</Paragraph>
-    //     <Paragraph><strong>I love dark mode</strong>, open source, and side projects. When I'm not working, I like running, watching movies, and <strong>eating cheese</strong>.</Paragraph>
-    //   </Section>
-    // </Container>
     return <div>
         <Paragraph
           css={{
@@ -195,9 +168,6 @@ function About(props) {
       </Head>
 
       {renderIntro()}
-
-      {/* <h2>Bio</h2>
-      {renderBio()} */}
 
       <h2>Career</h2>
       {renderCareer()}

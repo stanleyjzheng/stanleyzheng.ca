@@ -7,15 +7,24 @@ import { Wrapper } from '../components/Wrapper'
 export default function Base({ children }) {
   const { title, tagline, primaryColor, secondaryColor } = children.props
 
+  const GradientTitle = styled('h1', {
+    backgroundSize: "100%",
+    backgroundClip: "text",
+    WebkitBackgroundClip: "text",
+    MozBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    MozTextFillColor: "transparent",
+    WebkitBoxDecorationBreak: "clone",
+    '&::selection': {
+        background: `$hover`,
+        WebkitTextFillColor: `$${primaryColor}`,
+        MozTextFillColor: `$${primaryColor}`,
+    }
+  })
+
   return <Wrapper>
     <Navbar />
-    <PostMain
-      css={{
-        '& ::selection': {
-          background: "#4c566a",
-        }
-      }}
-    >
+    <PostMain>
       <PostContent>
         <PostContainer>
           <GradientTitle
@@ -36,13 +45,3 @@ export default function Base({ children }) {
     <Footer />
   </Wrapper>
 }
-
-const GradientTitle = styled('h1', {
-  backgroundSize: "100%",
-  backgroundClip: "text",
-  WebkitBackgroundClip: "text",
-  MozBackgroundClip: "text",
-  WebkitTextFillColor: "transparent",
-  MozTextFillColor: "transparent",
-  WebkitBoxDecorationBreak: "clone",
-})
