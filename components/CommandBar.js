@@ -144,24 +144,6 @@ export default function CommandBar(props) {
       icon: <Icon className='ri-slideshow-2-line' />,
     },
     // {
-    //   id: 'podcasts',
-    //   name: 'Podcasts',
-    //   shortcut: ['g', 'c'],
-    //   keywords: 'go-podcasts',
-    //   section: 'Go To',
-    //   perform: () => (router.push('/podcasts')),
-    //   icon: <Icon className='ri-mic-line' />,
-    // },
-    // {
-    //   id: 'investing',
-    //   name: 'Investing',
-    //   shortcut: ['g', 'i'],
-    //   keywords: 'go-investing',
-    //   section: 'Go To',
-    //   perform: () => (router.push('/investing')),
-    //   icon: <Icon className='ri-money-dollar-box-line' />,
-    // },
-    // {
     //   id: 'uses',
     //   name: 'Uses',
     //   shortcut: ['g', 'u'],
@@ -169,15 +151,6 @@ export default function CommandBar(props) {
     //   section: 'Go To',
     //   perform: () => (router.push('/uses')),
     //   icon: <Icon className='ri-computer-line' />,
-    // },
-    // {
-    //   id: 'reminder',
-    //   name: 'Reminder',
-    //   shortcut: ['g', 'r'],
-    //   keywords: 'go-reminder',
-    //   section: 'Go To',
-    //   perform: () => (router.push('/reminder')),
-    //   icon: <Icon className='ri-time-line' />,
     // },
   ]
 
