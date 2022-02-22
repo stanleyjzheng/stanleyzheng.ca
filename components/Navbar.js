@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { motion, AnimateSharedLayout } from 'framer-motion'
 import { useKBar } from 'kbar'
+import baffle from 'baffle'
 
 export default function Navbar() {
   const router = useRouter()
@@ -12,10 +13,33 @@ export default function Navbar() {
   const [hovered, setHovered] = useState('')
   const { query } = useKBar();
 
+  function startAnimation() {
+    var b = baffle('#logo').start('sz').set({
+      characters: '░█▓ ▓▒░<>/',
+      speed: 60
+    }).text((a) => ('stanley zheng'));
+
+    setTimeout(function () {
+      b.reveal(500);
+    }, 500);
+  }
+
+  function stopAnimation() {
+    var b = baffle('#logo').start('Stanley Zheng').set({
+      characters: '░█▓ ▓▒░<>/',
+      speed: 60
+    }).text((a) => ('sz'));
+
+    setTimeout(function () {
+      b.reveal(500);
+    }, 500);
+  }
+
   return <AnimateSharedLayout>
     <Header>
       <Link href="/">
-        <ButtonLogo as="a">sz</ButtonLogo>
+        <ButtonLogo as="a" id="logo" onMouseOver={startAnimation}
+          onMouseLeave={stopAnimation}>sz</ButtonLogo>
       </Link>
 
       <Nav>

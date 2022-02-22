@@ -1,10 +1,13 @@
 import { styled } from '../stitches.config'
 import Head from 'next/head'
-import Navbar from '../components/Navbar'
+// import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import ShortcutHome from '../components/ShortcutHome'
 import { PostMain, PostContent, PostContainer } from '../components/Post'
 import { Wrapper } from '../components/Wrapper'
+import dynamic from 'next/dynamic'
+
+const Navbar = dynamic(() => import('../components/Navbar'), { ssr: false })
 
 export async function getStaticProps() {
   return {
