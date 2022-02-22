@@ -29,9 +29,12 @@ export default function Index(props) {
     WebkitTextFillColor: "transparent",
     MozTextFillColor: "transparent",
     WebkitBoxDecorationBreak: "clone",
+    '&::selection': {
+        background: `$hover`,
+        WebkitTextFillColor: `$${primaryColor}`,
+        MozTextFillColor: `$${primaryColor}`,
+    }
   })
-
-  console.log(primaryColor)
 
   return (
     <Wrapper>

@@ -11,7 +11,7 @@ export const {
   config,
 } = createStitches({
   theme: {
-    colors: { // all from nordtheme.com
+    colors: { 
       yellow: '#EBCB8B', // nord aurora yellow
       pink: '#ff80bf', // default pink
       purple: '#B48EAD', // nord aurora purple
@@ -28,7 +28,7 @@ export const {
       hover: '#4c566a', // nord lightest slate gray
       gradient1: '#e66465', // from firefox
       gradient2: '#9198e5', // from firefox
-      command: 'rgba(255, 255, 255, 0.05)',
+      command: 'rgba(46, 52, 64, 0.8)',
     },
     fonts: {
       body: 'Biotif, sans-serif',
@@ -57,6 +57,9 @@ export const {
 const globalStyles = globalCss({
   '*': {
     fontFamily: '$body'
+  },
+  '::selection': {
+    background: "$hover",
   },
   'html, body': {
     margin: "0",
